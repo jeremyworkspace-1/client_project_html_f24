@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Student Life</title>
 </head>
 <body>
-    <a href = "#main-content">Skip to Main Content</a>
+    <div class="skip"><a href = "#main">Skip to Main Content</a></div>
     <header>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "food_pantry.html">Food Pantry</a></li>
@@ -17,39 +19,50 @@
                 <li class="active"><a href = "student_life.html">Student Life</a></li>
             </ul>
         </nav>
-        <h1>Student Life at UMSI</h1>
-
     </header>
     <main id="main-content">
-        <div>
+        <section class="page-header">
+            <h1>Student Life at UMSI</h1>
+        </section>
+        <section>
             <h2>Who we are</h2>
             <p>We believe in fair and equitable access to food and other basic resources. Because when each of us has what we need, our community is stronger and our students are more successful.
                 This website has been created to share information about the resources available to students. It’s also a place to share data and research that will help the U-M community understand how important this work is for the entire campus.
                 This work is led by Student Life and supported by academic units and campus partners. Because more resources are being discovered and created on a regular basis, this website will be updated often. Please be patient as we grow this important resource. </p>
-            <img src="images/Student_Life_1.jpg" alt="Three diverse students collaborating around a small table filled with notes and a laptop in a brightly lit study area." width="500">
-        </div>
+            <figure>
+                <img src="images/Student_Life_1.jpg" alt="Three diverse students collaborating around a small table filled with notes and a laptop in a brightly lit study area.">
+            <figcaption>Farmer Market in Kerrytown</figcaption>
+            </figure>
+        </section>
 
-        <div>
+        <section class="grid-container">
             <h2>Our resources</h2>
             <p>Here at Student Life, we’re committed to the well-being of each student as a whole. We want to support academic success but recognize that support can be personal, too—which is why we provide resources for basic needs. Whether you have a housing question, health care concern or emergency funding need, the following resources will help as you navigate campus life at U-M. </p>
-            <ol>
-                <li>Careers at U-M</li>
-                <li>Child Care Subsidy</li>
-                <li>Family Housing</li>
-                <li>Dean of Students Office</li>
-            </ol>
-            <img src="images/Student_Life_2.jpg" alt="Two students, one in a striped yellow, engaging in a discussion over a notebook. One holds a pen and the notebook, holds a laptop." width="500">
-        </div>
-        <div>
+            <div class="grid-item">
+                <img src="images/Student_Life_2.jpg" alt="Two students, one in a striped yellow, engaging in a discussion over a notebook. One holds a pen and the notebook, holds a laptop.">
+                <h3>Careers at U-M</h3>
+            </div>
+            <div class="grid-item">
+                <img src="images/Student_Life_3.jpg" alt="Two students sitting on a colorful blanket on the grass, studying in a sunny campus setting.">
+                <h3>Child Care Subsidy</h3>
+            </div>
+            <div class="grid-item">
+                <img src="images/Student_Life_3.jpg" alt="Two students sitting on a colorful blanket on the grass, studying in a sunny campus setting.">
+                <h3>Family Housing</h3>
+            </div>
+            <div class="grid-item">
+                <img src="images/Student_Life_3.jpg" alt="Two students sitting on a colorful blanket on the grass, studying in a sunny campus setting.">
+                <h3>Dean of Students Office</h3>
+            </div>
+        </section>
+
+        <section>
             <h2>Contact us</h2>
             <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access. On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only. Schedule your shopping appointment here. </p>
-            <img src="images/Student_Life_3.jpg" alt="Two students sitting on a colorful blanket on the grass, studying in a sunny campus setting." width="500">
-
-        </div>
+        </section>
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
     </footer>
 </body>
-
 </html>
