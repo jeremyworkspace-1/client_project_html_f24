@@ -9,8 +9,8 @@ body {
 }
 
 .active{
-    text-decoration: underline;
-    text-decoration-color: red;
+    color:#FFCB05;
+    
 
 }
 
@@ -158,8 +158,7 @@ footer p {
 }
 
 footer a {
-    color: #007bff;
-    text-decoration: none; 
+    color:#FFD700;
 }
 
 footer a:hover {
