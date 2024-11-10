@@ -425,6 +425,10 @@ footer a:hover {
         color: #ffcb05;
     }
 
+    nav a:active {
+        color: #ffcb05;
+    }
+
     .nav-overlay {
         display: none !important;  /* Never show overlay on desktop */
     }
@@ -482,6 +486,11 @@ footer a:hover {
     .header-content{
         max-width: 100%;
     }
+
+    .nav-menu .active a {
+        color: #ffcb05;
+    }
+
     .key_feature{
         display: flex;
         flex-direction: row-reverse;
