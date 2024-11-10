@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title> Student Success Portal</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+    <header>
+        <div class="header-content">
+    
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="food_pantry.html">Food Pantry</a></li>
+                    <li><a href="first_gen.html">First Gen</a></li>
+                    <li><a href="student_life.html">Student Life</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="key_feature_left" class="error">
+            <div class="text_box">
+                <h2>OOOPS!!</h2>
+                <p>This is not the page you are looking for</p>
+                <a href="index.html" class="cta-button">Back To Home</a>
+            </div>
+            <figure>
+                <img src="images/404_1.png" alt="404 error image">
+            </figure>
+        </section>
+
+    </main>
+
+    <footer class="footer-flex">
+
+        <div class="footer-logo">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="150">
+        </div>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food_pantry.html">Food Pantry</a></li>
+                <li><a href="first_gen.html">First Gen</a></li>
+                <li><a href="student_life.html">Student Life</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-info">
+            <p>MSI Academic Advising | <a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
+                    Academic Advising </a></p>
+            <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('.nav-menu');
+
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside (optional)
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger-menu');
+
+            if (!nav.contains(e.target) && !hamburger.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

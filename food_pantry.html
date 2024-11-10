@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,79 +8,167 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Food Pantry</title>
 </head>
+
 <body>
-    <div class="skip"><a href = "#main-content">Skip to Main Content</a></div>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li class="active"><a href = "food_pantry.html">Food Pantry</a></li>
-                <li><a href = "first_gen.html">First Gen</a></li>
-                <li><a href = "student_life.html">Student Life</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="food_pantry.html">Food Pantry</a></li>
+                    <li><a href="first_gen.html">First Gen</a></li>
+                    <li><a href="student_life.html">Student Life</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-<main id="main-content">
-    <section class="page-header">
-        <h1>Welcome to Food Pantry</h1>
-    </section>
-    <section>
-      <h2>Who we are</h2>
-      <p>College students and staff are facing food insecurity at alarming rates. The Maize and Blue Cupboard offers an immediate, comprehensive solution for the U-M community. Through access to resources, educational opportunities, and compassionate support, we empower students to make informed, sustainable choices. </p>
-      <figure>
-        <img src="images/Grocery_1.jpg" alt="A well-stocked shelving unit filled with various canned goods">
-        <figcaption>Farmer Market in Kerrytown</figcaption>
-    </figure>
-      
-    </section>
-
-    <section>
-      <h2>What we provide</h2>
-      <p>The Maize and Blue Cupboard provides a wide range of essential resources to support the well-being of the U-M community. We offer a variety of food options, including fresh produce, dairy, meat, bread, and shelf-stable items like rice and canned goods. Additionally, we supply kitchen essentials such as dishes, cookware, and utensils to help students prepare meals. </p>
-      <div class="what_we_provide">
-        <img src="images/Grocery_2.jpg" alt="A grocery store worker">
-        <h3>Food</h3>
-        <p>what we provide</p>
-      </div>
-    <div class="what_we_provide">
-        <img src="images/Grocery_2.jpg" alt="wearing a black shirt and a cap.">
-        <h3>Kitchen & Cooking</h3>
-        <p>what we provide</p>
-    </div>
-    <div class="what_we_provide">
-        <img src="images/Grocery_2.jpg" alt="surrounded by shelves of canned goods">
-        <h3>Personal Household</h3>
-        <p>what we provide</p>
-    </div>
-
-    <div class="what_we_provide">
-        <img src="images/Grocery_2.jpg" alt="bottled products in the store's stockroom.">
-        <h3>Personal Household</h3>
-        <p>Support</p>
-    </div>
-    </section>
-
-            <!-- Jackie Wolf -->
-    <section>
-            <h2>Who we are</h2>
-            <p>College students and staff are facing food insecurity at alarming rates. The Maize and Blue Cupboard offers an immediate, comprehensive solution for the U-M community. Through access to resources, educational opportunities, and compassionate support, we empower students to make informed, sustainable choices. </p>
+    <main id="main">
+        <section class="page-header">
+            <h1>Welcome to Food Pantry</h1>
+        </section>
+        <section class="hero-image">
             <figure>
-            <img src="images/Grocery_3.jpg" alt="black beans, sweet corn, and green peas, displayed in a neat arrangement in a store.">
-            <figcaption>A grocery Bag</figcaption>
+                <img src="images/Grocery_1.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
             </figure>
         </section>
-        <section>
-            <h2>Location & Hours</h2>
-            <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access. On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only. Schedule your shopping appointment here. </p>
+
+        <section class="key_feature">
+            <div class="text_box">
+                <h2>Who We Are</h2>
+                <p>College students and staff are facing food insecurity at alarming rates. The Maize and Blue Cupboard
+                    offers an immediate, comprehensive solution for the U-M community. Through access to resources,
+                    educational opportunities, and compassionate support, we empower students to make informed,
+                    sustainable choices.</p>
+                <a href="food_pantry.html" class="cta-button">Learn More About us</a>
+            </div>
             <figure>
-            <img src="images/Grocery_5.jpg" alt="A paper bag filled with a variety of fresh groceries">
-            <figcaption>A grocery Bag</figcaption>
+                <img src="images/Grocery_2.jpg" alt="A well-stocked shelving unit">
+                <figcaption>Farmer Market in Kerrytown</figcaption>
+            </figure>
+        </section>
+
+        <section class="what_we_provide">
+            <div>
+                <h2>What We Provide</h2>
+                <p>The Maize and Blue Cupboard provides a wide range of essential resources to support the well-being of
+                    the
+                    U-M community. We offer a variety of food options, including fresh produce, dairy, meat, bread, and
+                    shelf-stable items like rice and canned goods. Additionally, we supply kitchen essentials such as
+                    dishes, cookware, and utensils to help students prepare meals. </p>
+            </div>
+            <div class="provide_flex_box">
+                <div class="provide_box">
+                    <img src="images/Grocery_4.jpg" alt="A grocery store worker">
+                    <h3>Food</h3>
+                    <p>what we provide</p>
+                </div>
+                <div class="provide_box">
+                    <img src="images/Grocery_4.jpg" alt="wearing a black shirt and a cap.">
+                    <h3>Kitchen & Cooking</h3>
+                    <p>what we provide</p>
+                </div>
+                <div class="provide_box">
+                    <img src="images/Grocery_4.jpg" alt="surrounded by shelves of canned goods">
+                    <h3>Personal Household</h3>
+                    <p>what we provide</p>
+                </div>
+
+                <div class="provide_box">
+                    <img src="images/Grocery_4.jpg" alt="bottled products in the store's stockroom.">
+                    <h3>Personal Household</h3>
+                    <p>Support</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="key_feature_left">
+            <div class="text_box">
+                <h2>Our News</h2>
+                <h3>Fall 2024 Mobile Distribution for North Campus</h3>
+                <p>U-M’s Maize & Blue Cupboard (MBC), the College of Engineering, Student Life, and Ann Arbor-based Food
+                    Gatherers will host North Campus mobile food distributions to make MBC resources more accessible for
+                    North Campus residents. </p>
+                <a href="food_pantry.html" class="cta-button">Explore More</a>
+            </div>
+            <figure>
+                <img src="images/Grocery_3.jpg"
+                    alt="black beans, sweet corn, and green peas, displayed in a neat arrangement in a store.">
+                <figcaption>A grocery Can</figcaption>
+            </figure>
+        </section>
+        <section class="key_feature">
+            <div class="text_box">
+                <h2>Location & Hours</h2>
+                <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance
+                    only to ensure privacy for residents. Please contact us if you need ramp or elevator access.
+                    <br>Address: 420 S State St Ann Arbor, MI 48109
+                    <br>Phone:734-936-2794
+                    <br>Hours of Operation:
+                    <br>Sunday: 2pm-6pm
+                    <br>Monday - Thursday: 3pm-7pm
+                    <br>Friday: 12pm-7pm
+                    <br>Saturday: closed
+                </p>
+                <a href="food_pantry.html" class="cta-button">Contact Us</a>
+            </div>
+
+            <figure>
+                <img src="images/Grocery_5.jpg" alt="A paper bag filled with a variety of fresh groceries">
+                <figcaption>A grocery Bag</figcaption>
             </figure>
         </section>
     </main>
-    <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+    <footer class="footer-flex">
+
+        <div class="footer-logo">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="150">
+        </div>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food_pantry.html">Food Pantry</a></li>
+                <li><a href="first_gen.html">First Gen</a></li>
+                <li><a href="student_life.html">Student Life</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-info">
+            <p>MSI Academic Advising | <a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
+                    Academic Advising </a></p>
+            <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>
+        </div>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('.nav-menu');
+
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside (optional)
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger-menu');
+
+            if (!nav.contains(e.target) && !hamburger.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
 </body>
+
 </html>

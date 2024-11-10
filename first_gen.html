@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +8,175 @@
     <link rel="stylesheet" href="css/style.css">
     <title>First Gen</title>
 </head>
+
 <body>
-    <div class="skip"><a href = "#main-content">Skip to Main Content</a></div>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "food_pantry.html">Food Pantry</a></li>
-                <li class="active"><a href = "first_gen.html">First Gen</a></li>
-                <li><a href = "student_life.html">Student Life</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food_pantry.html">Food Pantry</a></li>
+                    <li class="active"><a href="first_gen.html">First Gen</a></li>
+                    <li><a href="student_life.html">Student Life</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main id="main-content">
+    <main id="main">
         <section class="page-header">
             <h1>First Gen at UMSI</h1>
         </section>
-        <section>
-            <h2>Who we are</h2>
-            <p>The First-Generation Student Program is grounded in a history of student activism. First-Generation College Students @UM, a student organization, was founded in 2007 with the mission to increase accessibility to resources for first-generation students and to build community among the population. The students advocated for greater campus support for themselves and other peer first-generation students. </p>
+        <section class="hero-image"></section>
+        <figure>
+            <img src="images/First_1.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+        </figure>
+        </section>
+
+        <section class="key_feature">
+            <div class="text_box">
+                <h2>Who We Are</h2>
+                <p>The First-Generation Student Program is grounded in a history of student activism. First-Generation
+                    College Students @UM, a student organization, was founded in 2007 with the mission to increase
+                    accessibility to resources for first-generation students and to build community among the
+                    population. The students advocated for greater campus support for themselves and other peer
+                    first-generation students. </p>
+            </div>
             <figure>
-                <img src="images/First_Gen_2.jpg" alt="Two girls are holding the first gen badge">
-                <figcaption>Two girls are holding the first gen badge</figcaption>
+                <img src="images/FGWebsite_Pic_2.jpg" alt="Two girls are holding the first gen badge">
             </figure>
         </section>
 
-        <section>
-            <h2>Our Stories</h2>
-            <p>U-M faculty, students and staff who are first-generation students and graduates proudly share their stories. We’d like to hear from you too. What has your experience been like as a first-gen at U-M? We are collecting stories from first-generation college students who have a connection to the University of Michigan. If you are an alumnus/alumna, faculty, staff or student from U-M, we would love to share your story. </p>
-            <div class="what_we_provide">
-                <img src="images/First_Gen_5.jpg" alt="Joseph Ballard II profile picture">
-                <h3>Joseph Ballard II</h3>
-                <p>My advice to any first-generation college student is to not let anything (imposter syndrome, environmental or societal influences, people, life circumstances, etc.) deter you from accomplishing any goals you have set for yourself.</p>
+        <section id="key_feature_left">
+            <div class="text_box">
+                <h2>First-Gen Gateway</h2>
+                <p>The First Generation Student Gateway serves as a starting point to get connected to resources for
+                    first-generation students. Housed in the Office of Academic Multicultural Initiatives (OAMI), the
+                    Gateway is linked to several partner offices and is a home for support for first-generation
+                    students. The Gateway is for all first-generation undergraduate and graduate students and their
+                    allies. </p>
+                <a href="https://firstgen.umich.edu/gateway/" class="cta-button">Explore More</a>
             </div>
-
-            <div class="what_we_provide">
-                <img src="images/First_Gen_6.jpg" alt="Cielo Jimenez profile picture">
-                <h3>Cielo Jimenez</h3>
-                <p>Seek as much help as you can. Whether it's from faculty, friends, or organizations, the more help you have to navigate college will help you tremendously in your journey to succeed.</p>
-            </div>
-
-            <div class="what_we_provide">
-                <img src="images/First_Gen_4.png" alt="Christina Zerka profile picture">
-                <h3>Christina Zerka</h3>
-                <p>It's perfectly normal not to have everything figured out from the start; trust the process, be open to new possibilities, and let your status as a first-gen student be a source of pride.</p>
-            </div>
-
+            <figure>
+                <img src="images/FGWebsite_Pic_3.jpg" alt="Two girls are holding the first gen badge">
+            </figure>
         </section>
 
-        <section class="events">
-            <h2>Our Events</h2>
+        <section class="what_we_provide">
             <div>
-                <img src="images/DSC04300-scaled.jpg" alt="First-Generation Winter picture">
+                <h2>Our Stories</h2>
+                <p>U-M faculty, students and staff who are first-generation students and graduates proudly share their
+                    stories. We’d like to hear from you too. What has your experience been like as a first-gen at U-M?
+                    We
+                    are collecting stories from first-generation college students who have a connection to the
+                    University of
+                    Michigan. If you are an alumnus/alumna, faculty, staff or student from U-M, we would love to share
+                    your
+                    story.
+                </p>
+            </div>
+            <div class="provide_flex_box">
+                <div class="provide_box">
+                    <img src="images/First_Gen_5.jpg" alt="Joseph Ballard II profile picture">
+                    <h3>Joseph Ballard II</h3>
+                    <p>My advice to any first-generation college student is to not let anything (imposter syndrome,
+                        environmental or societal influences, people, life circumstances, etc.) deter you from
+                        accomplishing
+                        any goals you have set for yourself.</p>
+                </div>
+
+
+                <div class="provide_box">
+                    <img src="images/First_Gen_6.jpg" alt="Cielo Jimenez profile picture">
+                    <h3>Cielo Jimenez</h3>
+                    <p>Seek as much help as you can. Whether it's from faculty, friends, or organizations, the more help
+                        you
+                        have to navigate college will help you tremendously in your journey to succeed.</p>
+
+                </div>
+
+                <div class="provide_box">
+                    <img src="images/First_Gen_4.png" alt="Christina Zerka profile picture">
+                    <h3>Christina Zerka</h3>
+                    <p>It's perfectly normal not to have everything figured out from the start; trust the process, be
+                        open
+                        to new possibilities, and let your status as a first-gen student be a source of pride.</p>
+                </div>
+                <div class="provide_box">
+                    <img src="images/First_Gen_7.jpg" alt="Cassidy Brimer profile picture">
+                    <h3>Cassidy Brimer</h3>
+                    <p>Prioritize taking care of and getting to know yourself in college- you don't have to 'prove' you belong. Tust in yourself and your capabilities, try your best, and everything will fall into place.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="key_feature">
+            <div class="text_box">
+                <h2>Our Events</h2>
                 <h3>2024 First-Generation Winter Community Dinner</h3>
-                <p>The First-Gen Community Dinner is an opportunity for first-generation college students to connect with each other and learn more about the First-Gen Gateway. There will be a featured resource at this event that is dedicated to supporting first-generation students and staff will be available to answer any questions you might have.</p>
+                <p>The First-Gen Community Dinner is an opportunity for first-generation college students to connect
+                    with each other and learn more about the First-Gen Gateway. There will be a featured resource at
+                    this event that is dedicated to supporting first-generation students and staff will be available to
+                    answer any questions you might have.</p>
+                <a href="https://firstgen.umich.edu/events/" class="cta-button">More Events</a>
             </div>
-
-            <div>
-                <img src="images/DSC00515-3-scaled.jpeg" alt="First-Gen Day of Visibility picture">
-                <h3>First-Gen Day of Visibility</h3>
-                <p>Join us for the culmination of First-Generation College Student Celebration Week at the Mason Hall Posting Wall by sharing your experience in an interactive photo event with CAPS! We’ll be donning our First-Generation apparel (and you can too!)</p>
-            </div>
-
-            <div>
-                <img src="images/Edited-12-scaled.jpg" alt="First-Gen Mentor Meet picture">
-                <h3>First-Gen Mentor Meet</h3>
-                <p>Interested in a post-graduate education, advice for navigating undergrad, or seeking out a mentor for the upcoming school year? Join the First-Gen Gateway in the atrium of the Student Activities Building for snacks and a first-of-its-kind “speed mentoring” event! We’ve assembled a cohort of first-generation graduate students (MPP, MBA, and more!), law students, and PHD students for “speed-dating” styled small-group discussion and socializing. Attendees will have an opportunity to engage for a set time with each of the potential mentors, and formally connect with them if they would like to seek a mentor/mentee relationship.</p>
-            </div>
+            <figure>
+                <img src="images/FGWebsite_Pic_4.jpg" alt="First-Generation Winter picture">
+            </figure>
         </section>
 
     </main>
-    <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+    <footer class="footer-flex">
+
+        <div class="footer-logo">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="150">
+        </div>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food_pantry.html">Food Pantry</a></li>
+                <li><a href="first_gen.html">First Gen</a></li>
+                <li><a href="student_life.html">Student Life</a></li>
+                <li><a href="student_life.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-info">
+            <p>MSI Academic Advising | <a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
+                    Academic Advising </a></p>
+            <p>© Copyrights <span id="year"></span> by UMSI. All rights reserved.</p>
+        </div>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('.nav-menu');
+
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside (optional)
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger-menu');
+
+            if (!nav.contains(e.target) && !hamburger.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 
 </html>
